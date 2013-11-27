@@ -1,0 +1,22 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+mimeset -f *
+alert --idea "Program will be installed to /boot/apps!
+Note! This software under GPL License.
+USE IT AT YOUR OWN RISK!" "OK" "ReadMe" "Exit"
+result=$?
+if [ $result -eq 0 ]
+then
+if [ -r Binaries/XCalc ]
+then
+copyattr -d Binaries/XCalc /boot/apps
+install -d /boot/home/config/documentation/xcalc
+copyattr -r -d Documentation/* /boot/home/config/documentation/xcalc
+alert --info "Install finished!" "Close"
+else
+alert --stop "Error: XCalc not compiled!" "Exit"
+fi
+elif [ $result -eq 1 ]
+then
+StyledEdit README
+fi

@@ -1,0 +1,19 @@
+README
+
+XCalc 2.6
+
+Thank you for downloading XCalc...
+
+Binaries of this version not provided by me, you must compile it yourself.
+
+1. Select language in "Source/Defines.h".
+2. Compile XCalc.
+3. Run "INSTALL" from this directory.
+
+You can't find your language header? Try to go http://nruslan.hotbox.ru/projects/xcalc/languages.html for checking language update package. Can't find it? Translate to your language yourself!
+
+How to translate?
+Go to Source/Dictionary and take prefer language to translate. Translate it and rename file to your language. After translating send it me to nruslan@hotbox.ru.
+
+Why I use this simple method to translate XCalc?
+I found that libraries like liberudite is very buggy. Very nice method to use defines.
