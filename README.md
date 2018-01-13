@@ -1,6 +1,7 @@
-README
-
 XCalc 2.6
+==
+
+![XCalc screenshot](XCalc.png)
 
 Thank you for downloading XCalc...
 
