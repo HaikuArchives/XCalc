@@ -23,7 +23,7 @@
 #include "XCalcTextView.h"
 #include "Parser.h"
 #include "Utility.h"
-
+#include <string.h>
 /* 
  * XCalcTextView :
  */
