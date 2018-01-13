@@ -1,4 +1,4 @@
-## Haiku Generic Makefile ##
+ ## Haiku Generic Makefile ##
 
 ## Fill in this file to specify the project being created, and the referenced
 ## Makefile-Engine will do all of the hard work for you. This handles any
@@ -32,11 +32,10 @@ SRCS =  Source/XCalc.cpp Source/XCalcWindow.cpp Source/XCalcView.cpp Source/XCal
 
 #	Specify the resource definition files to use. Full or relative paths can be
 #	used.
-RDEFS = 
+RDEFS = Source/XCalc.rdef
 
 #	Specify the resource files to use. Full or relative paths can be used.
 #	Both RDEFS and RSRCS can be utilized in the same Makefile.
-RSRCS =  Source/XCalc.rsrc
 
 # End Pe/Eddie support.
 # @<-src@ 
@@ -104,7 +103,7 @@ SYMBOLS :=
 DEBUGGER := 
 
 #	Specify any additional compiler flags to be used.
-COMPILER_FLAGS = -Woverloaded-virtual -funsigned-bitfields -Wwrite-strings 
+COMPILER_FLAGS =-funsigned-bitfields -Wwrite-strings 
 
 #	Specify any additional linker flags to be used.
 LINKER_FLAGS = 
