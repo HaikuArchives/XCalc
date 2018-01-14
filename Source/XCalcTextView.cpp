@@ -78,11 +78,13 @@ void XCalcTextView :: KeyDown(const char *bytes, int32 numBytes)
 					this->SetText(myLine);
 					myEnd=strlen(myLine);
 					Select(myEnd, myEnd);
+					ScrollToSelection();
 				}
 				// wrong expression : beep !
 				else
 				{
 					Select(pos, pos);
+					ScrollToSelection();
 					beep();
 				}
 				break;
